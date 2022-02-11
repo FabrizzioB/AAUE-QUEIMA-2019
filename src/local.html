@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <title>Queima das Fitas - Évora 2019</title>
+    <link rel='shortcut icon' type='image/x-icon' href="imgs/favicon.ico" />
+    <script type="text/javascript" src='js/counter.js'> </script>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = 'viewport' content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 650px;
+      }
+    </style>
+
+</head>
+<body id="container" style="background: url('imgs/fundo_site_queima.png'); width: auto; height: auto; background-repeat: no-repeat; position: static; /* POSICAO...*/ -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;">
+
+	<div style="
+			    margin-right: 2%; 
+				margin-left: 2%;
+				margin-top: 2%;
+				margin-bottom: 2%;
+				border-color: white;
+			    border-width: 3px;
+				border-style: solid;">
+		<header>
+			<div class="navbar" >
+				<a href="index.html">
+		        	<img class="logoaaue-header" src="imgs/logoaaue.svg">
+		        </a>
+				
+				<a href="local.html" class="hvr-fade" style=" text-decoration:none; color: inherit;">
+		          	<div>
+		              	<p class="texto-header">Localização</p>
+		          	</div>
+		        </a>
+		        <a href="cartaz.html" class="hvr-fade" style="text-decoration:none; color: inherit;">
+		          	<div>
+		              	<p class="texto-header">Cartaz</p>
+		          	</div>
+		        </a>
+		        <a href="bilhetes.html" class="hvr-fade" style="text-decoration:none; color: inherit;">
+		          	<div>
+		              	<p class="texto-header">Bilhetes</p>
+		          	</div>
+		        </a>
+		        <a href="pulseiras.html" class="hvr-fade" style="text-decoration:none; color: inherit;">
+		          	<div>
+		              	<p class="texto-header">Pulseiras</p>
+		          	</div>
+		        </a>
+		        <a href="apoios.html" class="hvr-fade" style="text-decoration:none; color: inherit;">
+		          	<div>
+		              	<p class="texto-header">Apoios</p>
+		          	</div>
+		        </a>
+		        <a href="https://aaue.pt/contactos/" target="_blank" class="hvr-fade" style="text-decoration:none; color: inherit;">
+		          	<div>
+		              	<p class="texto-header">Contactos</p>
+		          	</div>
+		        </a>
+			</div>
+		</header>
+
+		<div style=""id="map"></div> <!--CASO QUEIRAM RETIRAR O BORDER NO MAPA = border-radius: 0px;-->
+	    <script>
+
+	      function initMap() {
+	        var myLatLng = {lat: 38.574164, lng: -7.904349};
+
+	        var map = new google.maps.Map(document.getElementById('map'), {
+	          zoom: 14,
+	          center: myLatLng
+	        });
+
+	        var marker = new google.maps.Marker({
+	          position: myLatLng,
+	          map: map,
+	          title: 'Location'
+	        });
+	      }
+	    </script>
+
+	    <script async defer
+	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlXcsdk7Mb1Zjsmk8906nvzEnxAg78wEY&callback=initMap">
+	    </script>
+
+	    <div style="font-size: 40px; margin-top: 19px" align="center">
+	    	<a href="https://goo.gl/maps/iN8qxFpRW9R4RG2u5" target="_blank" class="texto-header"> CLICA AQUI PARA CONHECERES O LOCAL DE ENTRADA </a>
+	    </div>
+
+	    <div style="font-size: 40px; margin-top: 14px" align="center">
+	    	<a href="https://www.google.pt/maps/dir//38.5742527,-7.9043074/@38.574316,-7.9068373,606m/data=!3m1!1e3" target="_blank" class="texto-header"> CLICA AQUI PARA FACILIAR A TUA CHEGADA (DIREÇÕES) </a>
+	    </div>
+
+		<footer>
+		    <div style="margin-top: 17px">                       
+		        <img style="max-width:100%; border-radius: 30px; /*ADICIONADO*/" src="imgs/fundo-03.png">                      
+		    </div>                               
+		</footer>
+	</div>  
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/counter.js"></script>
+	<script src="js/header.js"></script>
+
+</body>
+</html>
